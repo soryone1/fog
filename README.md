@@ -7,5 +7,42 @@ I implements two features which normal boards in those devices don't provide:
 * Be able to start the fog and stop the fog.
 * Be able to control the fog amount based on a simple 5v analogRead value.
 
-## Hardware Connection
+## Pin Connections
 
+* VCC -> 5V
+* GND -> GND
+* A0 -> Analog Pin
+
+## Functions
+
+#### FogInit
+
+```cpp
+void Fog::FogInit() 
+```
+Do the Init in the Setup(), this will setup all the base requirement to use the board.
+
+#### FogOn
+
+```cpp
+void Fog::FogOn()
+```
+This will start a continuous spray at maximum power.
+
+#### FogOff
+
+```cpp
+void Fog::FogOff()
+```
+This will stop the spray completely.
+
+#### FogAnalog
+
+```cpp
+void Fog::FogAnalog()
+```
+This will control the amount of fog in real time by reading in the analog signal.
+
+## Acknowledgements
+
+Thanks for Deqing Sun and Felix Praschak's support!
