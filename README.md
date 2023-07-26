@@ -39,9 +39,9 @@ This will stop the spray completely.
 #### FogAnalog
 
 ```cpp
-void Fog::FogAnalog()
+void Fog::FogAnalog(int inputValue)
 ```
-This will control the amount of fog in real time by reading in the analog signal.
+This will control the amount of fog in real time by reading in the analog signal ranging from 0 - 1023.
 
 ## Acknowledgements
 
